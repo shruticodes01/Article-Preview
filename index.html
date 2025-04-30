@@ -1,36 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Article preview component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
 </head>
+
 <body>
+  <div class="container">
+    <main class="hero">
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+      <article>
+        <img src="images/drawers.jpg" class="art__img"
+          alt="a vase of dried grass and a decorative photo frame placed on top of a green cupboard">
+        <div class="art__description">
+          <h1 class="art__title art__title--font">Shift the overall look and feel by adding these wonderful
+            touches to furniture in your home</h1>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+          <p class="text__font">Ever been in a room and felt like something was missing? Perhaps
+            it felt slightly bare and uninviting. I’ve got some simple tips
+            to help you make any room feel complete.</p>
 
-  Michelle Appleton
-  28 Jun 2020
+          <div class="flex">
+            <div class="art__owner--grp">
+              <img class="img__size" src="images/avatar-michelle.jpg" alt="author-avatar">
 
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+              <div class="art__owner">
+                <h2 class="text__font art__owner--title">Michelle Appleton</h2>
+                <time class="text__font" datetime="2020-06-28">28 Jun 2020</time>
+              </div>
+            </div>
+
+            <button class="btn btn__share"><img class="icon__share" src="images/icon-share.svg"
+                alt="icon-share"></button>
+          </div>
+        </div>
+      </article>
+
+    </main>
+    <footer>
+      <div class="attribution">
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>.
+        <p>Coded by <a href="#">shruticodes01</a>.</p>
+      </div>
+    </footer>
   </div>
 </body>
+
 </html>

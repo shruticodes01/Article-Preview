@@ -1,0 +1,177 @@
+:root {
+    --Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+
+body {
+    min-height: 100vh;
+    /* line-height: 1.5; */
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+} */
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+}
+
+.container {
+    width: 87.2%;
+    max-width: 730px;
+    margin: 0 auto
+}
+
+.hero {
+    margin-block: 4rem;
+}
+
+/* Font -- Typography */
+.art__title--font {
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 130%;
+    letter-spacing: .25%;
+    color: var(--Dark-Grayish-Blue)
+}
+
+.text__font {
+    font-size: .8125rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: .12%;
+    color: var(--Dark-Grayish-Blue)
+}
+
+.art__owner--title {
+    text-wrap: nowrap;
+    font-weight: 900;
+}
+
+
+/*Other Styles*/
+
+.art__img {
+    margin-bottom: 2rem;
+}
+
+.art__description {
+    padding: 0 1.875rem;
+}
+
+.art__title {
+    margin-bottom: 1.5rem;
+}
+
+.flex {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.img__size {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.art__owner--grp {
+    display: flex;
+    gap: 1rem;
+    margin-right: auto;
+}
+
+.btn {
+    width: 2rem;
+    height: 2rem;
+    background: var(--Grayish-Blue);
+    border: none;
+    border-radius: 50%;
+
+}
+
+.icon__share {
+    margin: 0 auto;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* @media (min-width: 375px) {
+    .art__owner {
+        margin-right: 4rem;
+    }
+
+} */
