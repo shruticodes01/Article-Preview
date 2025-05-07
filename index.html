@@ -17,33 +17,49 @@
 
 </head>
 
-<body>
-  <div class="container">
-    <main class="hero">
+<body class="hero">
+  <div class="container hero__container">
+    <main class="art__container">
 
       <article class="flex__lg--screen">
-        <img src="images/drawers.jpg" class="art__img"
-          alt="a vase of dried grass and a decorative photo frame placed on top of a green cupboard">
+
+        <div class="art__img">
+          <img src="images/drawers.jpg" class="art__img--style"
+            alt="a vase of dried grass and a decorative photo frame placed on top of a green cupboard">
+        </div>
         <div class="art__description">
-          <h1 class="art__title art__title--font">Shift the overall look and feel by adding these wonderful
-            touches to furniture in your home</h1>
+          <div class="art__description--padding">
+            <h1 class="art__title art__title--font">Shift the overall look and feel by adding these wonderful
+              touches to furniture in your home</h1>
 
-          <p class="text__font">Ever been in a room and felt like something was missing? Perhaps
-            it felt slightly bare and uninviting. I’ve got some simple tips
-            to help you make any room feel complete.</p>
+            <p class="text__font">Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips
+              to help you make any room feel complete.</p>
+          </div>
+          <div class="flex art__owner--connect" id="change-bg">
+            <div class="art__owner--grp flex" id="hide-author">
+              <img class="img__size" id="hide-img" src="images/avatar-michelle.jpg" alt="author-avatar">
 
-          <div class="flex">
-            <div class="art__owner--grp">
-              <img class="img__size" src="images/avatar-michelle.jpg" alt="author-avatar">
-
-              <div class="art__owner">
+              <div class="art__owner" id="author-name">
                 <h2 class="text__font art__owner--title">Michelle Appleton</h2>
                 <time class="text__font" datetime="2020-06-28">28 Jun 2020</time>
               </div>
             </div>
 
-            <button class="btn btn__share"><img class="icon__share" src="images/icon-share.svg"
-                alt="icon-share"></button>
+            <div class="button__grp flex" id="social-position">
+              <div class="hidden" id="social-visible">
+                <div class="btn__grp--social flex">
+                  <p class="text__font text__font--clr">SHARE</p>
+                  <button class="btn btn__fb" type="button"><img src="images/icon-facebook.svg"></button>
+                  <button class="btn btn__pintrest" type="button"><img src="images/icon-pinterest.svg"></button>
+                  <button class="btn btn__twitter" type="button"><img src="images/icon-twitter.svg"></button>
+                </div>
+                <div class="triangle" id="triangle-shape"></div>
+              </div>
+
+              <button class="btn btn__share" id="btn-share" type="button"><img class="icon__share"
+                  src="images/icon-share.svg" alt="icon-share"></button>
+            </div>
           </div>
         </div>
       </article>
@@ -56,6 +72,7 @@
       <p>Coded by <a href="#">shruticodes01</a>.</p>
     </div>
   </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>
