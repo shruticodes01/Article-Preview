@@ -156,6 +156,7 @@ body {
 .art__owner--connect {
     margin: 3rem 0 0;
     padding-inline: 1.875rem;
+    justify-content: space-between;
 }
 
 .img__size {
@@ -165,10 +166,9 @@ body {
 }
 
 .art__owner--grp {
-    /* display: flex; */
     gap: 1rem;
-    margin-right: auto;
 }
+
 
 .btn {
     width: 2rem;
@@ -178,25 +178,26 @@ body {
     /* border-radius: 50%; */
 }
 
+.btn__grp {
+    gap: 4rem;
+}
+
 .btn__grp--social {
+    align-self: flex-start;
     background: var(--Dark-Grayish-Blue);
     border-radius: .625rem;
     gap: 1rem;
-    margin-right: auto;
-    position: relative;
-    left: -50px;
 }
 
 
 .triangle {
-
     width: 0;
     height: 0;
     border-left: .8rem solid transparent;
     border-right: .8rem solid transparent;
     border-top: .8rem solid var(--Dark-Grayish-Blue);
     position: relative;
-    left: 65px;
+    left: 112px;
 }
 
 .btn__share {
@@ -296,4 +297,5 @@ body {
         width: 22.8125rem;
         margin-left: 2.5rem;
     }
+
 }
