@@ -22,6 +22,7 @@ btnShare.addEventListener("click", function () {
   if (width < 768) {
     alert(1);
     socialsVisible.classList.remove("hidden");
+    bubbleShape.classList.add("hidden");
     removeAuthor.classList.add("hidden");
     removeAvatar.classList.add("hidden");
     hideAuthor.classList.add("hidden");
@@ -34,6 +35,7 @@ btnShare.addEventListener("click", function () {
   } else if (width > 768) {
     alert(2);
     socialsVisible.classList.remove("hidden");
+    bubbleShape.classList.remove("hidden");
     removeAuthor.classList.remove("hidden");
     removeAvatar.classList.remove("hidden");
     hideAuthor.classList.remove("hidden");
