@@ -7,6 +7,7 @@ const hideAuthor = document.querySelector("#author-name");
 const changeBackground = document.getElementById("change-bg");
 const btnsGrp = document.querySelectorAll(".btn");
 const btnShare = document.querySelector("#btn-share");
+const btnShareImg = document.querySelector(".icon__share");
 
 const socialsVisible = document.querySelector("#social-visible");
 const socialPosition = document.querySelector("#social-position");
