@@ -48,16 +48,6 @@ h6 {
     overflow-wrap: break-word;
 }
 
-/* h1,
-h2,
-h3,
-h4,
-button,
-input,
-label {
-    line-height: 1.1;
-} */
-
 #root,
 #__next {
     isolation: isolate;
@@ -87,6 +77,11 @@ body {
     border-bottom-left-radius: .625rem;
     border-bottom-right-radius: .625rem;
     box-shadow: 0 .02rem .1rem .02rem var(--Dark-Blue);
+}
+
+.art__container {
+    background: #fff;
+    border-radius: .625rem;
 }
 
 .hidden {
@@ -123,20 +118,27 @@ body {
 
 /*Other Styles*/
 
+.art__img {
+    width: 100%;
+    height: max(50vw, 12.5rem);
+    margin-bottom: 2rem;
+}
 
 .art__img--style {
     width: 100%;
-    height: max(50vw, 12.5rem);
+    height: 100%;
+    /* height: max(50vw, 12.5rem); */
+
     object-fit: cover;
     object-position: center -1rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     border-top-right-radius: .625rem;
     border-top-left-radius: .625rem;
 
 }
 
 .art__description {
-    /* padding: 0 1.875rem 1.125rem; */
+    /* padding: 0 1.875rem 1.125rem;  */
     padding: 0 0 1.125rem;
     border-bottom-left-radius: .625rem;
     border-bottom-right-radius: .625rem;
@@ -247,17 +249,20 @@ body {
 
     .art__img {
         position: relative;
+        margin-bottom: 0;
+        height: 21.625rem;
+        width: 14.3125rem;
 
     }
 
     .art__img--style {
         position: relative;
-        right: 40px;
-        height: 21.625rem;
-        width: 14.3125rem;
+        right: 58px;
+        height: inherit;
+        width: inherit;
         margin-bottom: 0;
         object-fit: fill;
-        object-position: left 2.55rem top 0;
+        object-position: top 0 left 2.55rem;
         border-top-right-radius: 0;
         border-bottom-left-radius: .625rem;
 
@@ -265,7 +270,7 @@ body {
 
     .art__description {
         position: relative;
-        right: 40px;
+        right: 56px;
         width: 19.4375rem;
         padding: 0;
         align-self: center;
@@ -289,15 +294,20 @@ body {
         width: 100%;
     }
 
-    .art__img--style {
-        right: 48px;
+    .art__img {
         width: 17.8125rem;
         height: 17.5rem;
+    }
+
+    .art__img--style {
+        right: 69px;
+        width: 100%;
+        height: 100%;
         object-position: left 3.15rem top 0;
     }
 
     .art__description {
-        right: 48px;
+        right: 68px;
         width: 22.8125rem;
         margin-left: 2.5rem;
     }
